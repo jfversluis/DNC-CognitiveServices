@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    x:Class="DNCCognitiveServices.MainPage">
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image x:Name="PhotoImage" Grid.Row="0" />
+        <Button x:Name="CameraButton" Text="Take Photo (Computer Vision)" Clicked="Handle_Clicked_Vision" BackgroundColor="Silver" TextColor="White" Grid.Row="1" />
+        <Button x:Name="CameraButtonEmotion" Text="Take Photo (Emotion)" Clicked="Handle_Clicked_Emotion" BackgroundColor="Silver" TextColor="White" Grid.Row="2" />
+    </Grid>
+</ContentPage>
